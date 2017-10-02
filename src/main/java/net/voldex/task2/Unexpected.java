@@ -22,8 +22,12 @@ public final class Unexpected {
 		//Actually get the cache
 		Integer[] integerCache = (Integer[]) integerCacheField.get(integerCacheClass);
 
-		//Does this actually work?
+		//Set the index of 4 to be the value 5
+		integerCache[132] = 5;
+
+		//Has this changed the array, and possibly the print methods?
 		System.out.println(Arrays.toString(integerCache));
+		System.out.println(Integer.valueOf(4));
 	}
 
 }
